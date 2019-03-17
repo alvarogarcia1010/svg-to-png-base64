@@ -1,0 +1,30 @@
+:root
+{
+  box-sizing: border-box;
+}
+
+*, ::before, ::after
+{
+  box-sizing: inherit;
+}
+
+body {
+  padding-top: 0px;
+}
+
+rect:hover{
+  cursor: pointer;
+}
+
+.size{
+  height: 570px;
+}
+
+div#svg-img * {
+  width:100%;
+  height:100%;
+}
+div#svg-img-2 * {
+  width:100%;
+  height:100%;
+}
