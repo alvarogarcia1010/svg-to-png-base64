@@ -3,7 +3,7 @@ $(document).ready(function(){
   // var miImagen = ""
   canvasToBase64();
   //
-  // document.getElementById('dl').addEventListener('click', dlCanvas, false);
+  document.getElementById('dl').addEventListener('click', dlCanvas, false);
 
 });
 
@@ -83,18 +83,3 @@ function dlCanvas() {
   img.setAttribute('src', dt);
   img.setAttribute('width', '100%');
 };
-
-function prueba(){
-  var node = document.getElementById('space-svg-image');
-
-domtoimage.toPng(node)
-    .then(function (dataUrl) {
-        var img = new Image();
-        img.src = dataUrl;
-        document.body.appendChild(img);
-        console.log(dataUrl)
-    })
-    .catch(function (error) {
-        console.error('oops, something went wrong!', error);
-    });
-}
